@@ -1,0 +1,19 @@
+.home-main {
+    height: 100vh;
+    /* background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(246, 221, 226, 1) 25%,
+        rgba(241, 228, 255, 1) 50%,
+        rgba(219, 244, 255, 1) 75%,
+        rgba(255, 255, 255, 1) 100%
+    ); */
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(238, 223, 217, 1) 35%,
+        rgba(238, 223, 217, 1) 65%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-size: cover;
+}
