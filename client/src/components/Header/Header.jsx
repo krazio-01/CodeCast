@@ -16,7 +16,7 @@ const navLinks = [
         path: "contact",
     },
 ];
-
+    
 const Header = () => {
     return (
         <header>
@@ -40,7 +40,7 @@ const Header = () => {
 
                 <div className="header-end">
                     <div className="auth-links">
-                        <NavLink to="/login">Login</NavLink>
+                        <NavLink to="/login">Log In</NavLink>
                         <NavLink to="/signup">Sign Up</NavLink>
                     </div>
                 </div>

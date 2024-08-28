@@ -1,19 +1,40 @@
 .home-main {
     height: 100vh;
-    /* background: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(246, 221, 226, 1) 25%,
-        rgba(241, 228, 255, 1) 50%,
-        rgba(219, 244, 255, 1) 75%,
-        rgba(255, 255, 255, 1) 100%
-    ); */
-    background: linear-gradient(
-        90deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(238, 223, 217, 1) 35%,
-        rgba(238, 223, 217, 1) 65%,
-        rgba(255, 255, 255, 1) 100%
-    );
+    background-image: url("../../assets/bg.jpg");
+    background-position: center;
     background-size: cover;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-clr);
+    height: 100%;
+}
+
+.home-title {
+    margin-bottom: 2rem;
+}
+
+.home-actions a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-clr);
+    color: var(--secondary-clr);
+    font-weight: 500;
+    font-size: var(--fz-md);
+    cursor: pointer;
+    outline: 1px solid var(--primary-clr);
+    transition: all 0.2s ease-in-out;
+}
+
+.home-actions a:hover {
+    background: transparent;
+    color: var(--primary-clr);
 }

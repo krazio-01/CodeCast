@@ -1,12 +1,6 @@
 header {
-    background: linear-gradient(
-        90deg,
-        hsl(0, 0%, 100%) 0%,
-        hsl(17, 38%, 89%) 35%,
-        hsl(17, 38%, 89%) 65%,
-        hsl(0, 0%, 100%) 100%
-    );
-    background-size: cover;
+    position: absolute;
+    width: 100%;
 }
 
 .header-container {
@@ -15,7 +9,6 @@ header {
     justify-content: space-between;
     margin-inline: 100px;
     padding: 0.5rem;
-    outline: 2px solid red;
 }
 
 .header-starter {
@@ -28,13 +21,13 @@ header {
     align-items: center;
     justify-content: center;
     margin-right: 3rem;
-    color: var(--secondary-clr);
+    color: var(--primary-clr);
     cursor: pointer;
 }
 
 .header-starter .logo img {
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
 }
 
 .header-starter .logo span {
@@ -46,15 +39,48 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
     list-style: none;
-}
-
-.header-nav ul li {
-    text-decoration: none;
 }
 
 .header-nav > ul li a {
     font-weight: 500;
+    color: var(--primary-clr);
+    padding: 0.3rem .7rem;
+    border-radius: var(--border-radius);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.header-nav > ul li a:hover {
+    background-color: hsl(0 0% 100% / 0.1);
+}
+
+.auth-links a {
+    padding: 0.3rem .7rem;
+    font-weight: 500;
+    background-color: var(--primary-clr);
     color: var(--secondary-clr);
+    border-radius: var(--border-radius);
+    transition: all 0.2s ease-in-out;
+}
+
+.auth-links a:nth-child(1) {
+    outline: 1px solid var(--primary-clr);
+}
+
+.auth-links a:nth-child(1):hover {
+    background: transparent;
+    color: var(--primary-clr);
+}
+
+.auth-links a:nth-child(2) {
+    background-color: var(--secondary-clr);
+    color: var(--primary-clr);
+    outline: 1px solid transparent;
+    margin-left: 2rem;
+}
+
+.auth-links a:nth-child(2):hover {
+    background: transparent;
+    outline: 1px solid var(--primary-clr);
 }

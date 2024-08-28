@@ -1,6 +1,12 @@
 :root {
-    --primary-clr: #fff;
-    --secondary-clr: #000;
+    --primary-clr: hsl(0, 0%, 100%);
+    --primary-light-clr: hsl(0 0% 100% / 0.8);
+    --hover-light: hsl(0 0% 100% / 0.15);
+    --secondary-clr: hsl(0, 0%, 3%);
+    --secondary-light-clr: hsl(0 0% 3% / 0.3);
+    --accent-clr: hsl(30, 69%, 59%);
+
+    --border-radius: 0.5rem;
 
     --fz-xs: 0.7rem;
     --fz-sm: 0.85rem;
@@ -22,4 +28,10 @@ a {
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
         Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: var(--primary-clr);
+}
+
+.overlay {
+    border-image-source: linear-gradient(var(--secondary-light-clr), hsl(0, 0%, 3%));
+    border-image-slice: fill 1;
 }
