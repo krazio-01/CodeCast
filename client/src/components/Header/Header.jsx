@@ -1,21 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.png";
+import navLinks from '../../utils/NavigationLinks';
 import "./header.css";
-
-const navLinks = [
-    {
-        title: "Product",
-        path: "product",
-    },
-    {
-        title: "Pricing",
-        path: "pricing",
-    },
-    {
-        title: "Contact",
-        path: "contact",
-    },
-];
     
 const Header = () => {
     return (

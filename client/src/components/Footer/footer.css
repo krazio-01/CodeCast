@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: min(3rem, 90%);
+}
+
+.social-links {
+    margin-top: 3rem;
+}
+
+.social-links svg{
+    margin-inline: 1rem;
+}
+
+.footer .site-links {
+    margin-bottom: 3rem;
+}
+
+.footer .site-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    list-style-type: none;
+}
+
+.footer .site-links ul li a{
+    color: var(--primary-clr);
+}

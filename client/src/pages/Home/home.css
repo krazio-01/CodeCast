@@ -1,21 +1,22 @@
-.home-main {
-    height: 100vh;
-    background-image: url("../../assets/bg.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
 .home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: var(--primary-clr);
-    height: 100%;
+    background-image: url("../../assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .home-title {
     margin-bottom: 2rem;
+    text-align: center;
+}
+
+.home-title p {
+    margin-top: 0.5rem;
 }
 
 .home-actions a {
@@ -37,4 +38,44 @@
 .home-actions a:hover {
     background: transparent;
     color: var(--primary-clr);
+}
+
+.home-content {
+    height: 100vh;
+}
+
+.home-content h2 {
+    font-weight: 500;
+    color: var(--primary-clr);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-inline: auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 1rem;
+    max-width: 80%;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-light-clr);
+    color: var(--primary-clr);
+    width: 100%;
+}
+
+.feature img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
 }
